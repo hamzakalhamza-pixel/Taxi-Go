@@ -1,0 +1,216 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+.app-body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Page Wrapper */
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background */
+.background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC02DeZrdxPiIzBTlSdOR13EZ06jLtjiInDazEFrDhDj1asuAOXFq0HcGwpOZwJ6W6DNoV_DgEndzkb4Qo9D8wILkNG52PCek7Q1qZ21xqW3ljaUbVkAKrQNj_np4xhQo5i-WC5RK8JAaja_UUQnRyGIpX5_-8UgstKkIz5rYxPH5jZrwdo-jj7_RQpHBEGTXAlAhjrDwyIq8WjMKw1fpQ410KUhbChz-P0tPDJzT7kuVUklNbZNmxPsLswuiUaukvaAjFcD6niHgk")
+    no-repeat center center / cover;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+/* Card */
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 360px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 18px;
+  padding: 28px 24px;
+}
+
+/* Brand */
+.brand-section {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.brand-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background:yellow;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(19, 91, 236, 0.4);
+}
+
+.brand-icon span {
+  font-size: 32px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input Wrapper */
+.input-field-wrapper {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0 14px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.2s ease;
+}
+
+.input-field-wrapper:focus-within {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.25);
+}
+
+/* Input */
+.input-control {
+  flex: 1;
+  height: 100%;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  color: white !important;
+  font-size: 14px;
+}
+
+.input-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Autofill fix */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Eye icon */
+.password-toggle {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Forgot */
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password a {
+  font-size: 13px;
+  color:white;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.login-button {
+  margin-top: 8px;
+  height: 45px;
+  border-radius: 22px;
+  background:yellow;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+/* Signup */
+.signup-text {
+  margin-top: 16px;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-text a {
+  color:white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 22px 18px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+.material-symbols-outlined{
+  color:black;
+}
+.password-toggle{
+  color:white;
+}
